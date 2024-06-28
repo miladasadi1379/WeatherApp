@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'BYekan';
+  src: url('../assets/font/BYekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: B Yekan, Vazir, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: BYekan;
+}
+
+html,
+body {
+  overflow: hidden;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* blur result section */
+#blurSection {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#CardSection {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  place-content: center;
+  place-items: center;
+  margin: 2rem;
+  text-align: center;
+  font-size: x-large;
+  color: white !important;
+}
+
+#HeaderText {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+}
+
+.css-k764km-MuiPaper-root-MuiAppBar-root {
+  background: rgba(128, 128, 128, 0.377);
+  border-radius: 4px;
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.MuiInputBase-root {
+  height: 3rem;
+}
+
+#home {
+  place-items: center;
+  display: flex;
+  place-content: space-around;
+  margin: 2rem,
+}
+
+/* carousel */
+.slick-slider {
+  position: relative;
+  max-width: 90%;
+  right: 0 !important;
+  min-width: 90%;
+  -webkit-touch-callout: none;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: +2rem !important;
+  margin-right: +2rem !important;
+  cursor: pointer !important;
+  direction: rtl !important;
+}
